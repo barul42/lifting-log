@@ -5,8 +5,8 @@ if (isset($_POST["name"])){
 	$eweight = $_POST["weight"];
 	$edate = date('Ymd');
 	$statement = $db->prepare("INSERT INTO exercise (name, weight, date) VALUES(:ename, :eweight, :edate)");
-	$statement->bindParam(':ename', $_POST["name"], SQLITE3_TEXT);
-	$statement->bindParam(':eweight', $_POST["weight"], SQLITE3_TEXT);
+	$statement->bindParam(':ename', $ename, SQLITE3_TEXT);
+	$statement->bindParam(':eweight', $ename, SQLITE3_TEXT);
 	$statement->bindParam(':edate', $edate);
 	$statement->execute();
 	
