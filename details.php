@@ -17,7 +17,7 @@ $selected_date = $_POST['dates'];
 <select name="date">
 <?php
 while ($row = $date_details->fetchArray()) {
-	echo '<option value="'.$row['date'].'">'.$row['date'].'</option>'.PHP_EOL;
+	echo '<option value="'.$row['DATE'].'">'.$row['DATE'].'</option>'.PHP_EOL;
 }
 ?>
 </select>

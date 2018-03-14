@@ -22,7 +22,7 @@ $curex = $db->query('SELECT * FROM exercise WHERE date = '.$curdate.'');
 <tbody>
 <?php
 while ($row = $curex->fetchArray()) {
-	echo "<tr><td>".$row['name']."</td><td>".$row['weight']."</td><td>".$row['date']."</td></tr>";
+	echo "<tr><td>".$row['NAME']."</td><td>".$row['WEIGHT']."</td><td>".$row['DATE']."</td></tr>";
 }
 ?>
 </tbody>

@@ -13,7 +13,7 @@
 $db = new SQLite3('db/db.sqlite');
 $specified_day = $db->query('SELECT * FROM exercise WHERE date = '.$_POST["date"].'');
 while ($row = $specified_day->fetchArray()) {
-	echo "<tr><td>".$row['name']."</td><td>".$row['weight']."</td><td>".$row['date']."</td></tr>";
+	echo "<tr><td>".$row['NAME']."</td><td>".$row['WEIGHT']."</td><td>".$row['DATE']."</td></tr>";
 }
 ?>
 </tbody>
